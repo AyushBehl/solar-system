@@ -7,7 +7,7 @@ on:
             - 'feature/*'
 
 env:
-  MONGO_URI: mongodb://127.0.0.1:27017/solar-system
+  MONGO_URI: ${{ vars.MONGO_URI }}
   MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
   MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
 jobs:
